@@ -1,0 +1,234 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:regular,&display=swap);
+
+/* reset styles */
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+}
+
+/* --------- end reset styles -------------- */
+
+/* default  */
+
+body {
+    scroll-behavior: smooth;
+    background: #BCA3B6;
+    background: linear-gradient(0deg, #BCA3B6, #BCA3B6), #AF8672;
+}
+
+body.lock {
+    overflow: hidden;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: "Nyght Serif";
+    src: url(../font/NyghtSerif-Regular.ttf);
+    src: url(../font/NyghtSerif-Regular.woff);
+    font-weight: normal;
+}
+
+@media (max-width: 480px) {
+
+    .prime__container {
+        position: relative;
+        padding: 0 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 70px;
+    }
+
+    .prime {
+        margin-bottom: 142px;
+    }
+
+    .prime__heading {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 156px;
+        aspect-ratio: 2.52 / 1;
+    }
+
+    .prime__heading img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .prime__title {
+        font-family: "Nyght Serif";
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: 0.32em;
+        text-align: center;
+    }
+
+    .prime__title span {
+        font-family: "Nyght Serif";
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: 0.32em;
+        text-align: center;
+    }
+
+    .prime__subtitle {
+        font-family: "Nyght Serif";
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: 0.32em;
+        text-align: center;
+        color: rgb(0, 0, 0);
+    }
+
+    .btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 50px;
+        gap: 10px;
+        max-width: 298px;
+        height: 64px;
+        background: #000000;
+        color: rgba(255, 255, 255, 1);
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+        width: 100%;
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+
+    }
+
+    .prime__btn.active,
+    .prime__link.active {
+        background-color: rgba(98, 129, 106, 1);
+    }
+
+    .prime__btns {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer {
+        margin-top: auto;
+    }
+
+    .footer__container {
+        padding: 0 73px;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .footer__logo {
+        aspect-ratio: 8.79 / 1;
+    }
+
+    .footer__logo img {
+        width: 100%;
+        height: 100%;
+    }
+}
