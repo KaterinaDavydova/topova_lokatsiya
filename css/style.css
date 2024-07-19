@@ -97,7 +97,7 @@ h6 {
 body {
     scroll-behavior: smooth;
     background: #BCA3B6;
-    background: linear-gradient(0deg, #BCA3B6, #BCA3B6), #AF8672;
+    /* background: linear-gradient(0deg, #BCA3B6, #BCA3B6), #AF8672; */
 }
 
 body.lock {
@@ -134,9 +134,7 @@ body.lock {
         gap: 70px;
     }
 
-    .prime {
-        margin-bottom: 142px;
-    }
+    
 
     .prime__heading {
         display: flex;
