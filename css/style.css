@@ -97,7 +97,6 @@ h6 {
 body {
     scroll-behavior: smooth;
     background: #BCA3B6;
-    /* background: linear-gradient(0deg, #BCA3B6, #BCA3B6), #AF8672; */
 }
 
 body.lock {
@@ -134,14 +133,16 @@ body.lock {
         gap: 70px;
     }
 
-    
+    /* .prime {
+        margin-bottom: 142px;
+    } */
 
     .prime__heading {
         display: flex;
         gap: 20px;
         justify-content: center;
         align-items: center;
-        margin-top: 156px;
+        margin-top: 13vh;
         aspect-ratio: 2.52 / 1;
     }
 
@@ -178,6 +179,10 @@ body.lock {
         color: rgb(0, 0, 0);
     }
 
+    .prime__btns{
+        margin-bottom: 142px;
+    }
+
     .btn {
         display: flex;
         flex-direction: row;
@@ -195,6 +200,7 @@ body.lock {
         line-height: 24px;
         text-align: center;
         width: 100%;
+
     }
 
     .prime__btn.active,
@@ -209,7 +215,7 @@ body.lock {
     }
 
     .footer {
-        margin-top: auto;
+        
     }
 
     .footer__container {
